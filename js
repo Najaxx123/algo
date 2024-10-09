@@ -34,3 +34,57 @@ function aireRectangle(a, b){
   return aireRectangle
 }
 console.log(aireRectangle(5, 3));
+
+function estMajuscule(chaine) {
+  return chaine === chaine.toUpperCase();
+}
+console.log(estMajuscule("HELLO")); // Résultat attendu : true
+console.log(estMajuscule("Hello")); // Résultat attendu : false
+
+
+function maxDeuxNombres(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+console.log(maxDeuxNombres(5, 10)); // Résultat attendu : 10
+
+
+function difference(a, b) {
+  if (a > b) {
+    return a - b;
+  } else {
+    return b - a;
+  }
+}
+console.log(difference(10, 3)); // Résultat attendu : 7
+
+
+
+function convertirEnCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5 / 9;
+}
+console.log(convertirEnCelsius(100)); // Résultat attendu : 37.7778
+
+
+
+function estMajeur(age) {
+  return age >= 18;
+}
+console.log(estMajeur(20)); // Résultat attendu : true
+console.log(estMajeur(16)); // Résultat attendu : false
+
+
+
+function maxTroisNombres(a, b, c) {
+  if (a >= b && a >= c) {
+    return a;
+  } else if (b >= a && b >= c) {
+    return b;
+  } else {
+    return c;
+  }
+}
+console.log(maxTroisNombres(3, 7, 5)); // Résultat attendu : 7
